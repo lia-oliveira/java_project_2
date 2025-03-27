@@ -79,12 +79,13 @@ public class ChessMatch {
 		validateSourcePosition(source);
 		validateTargetPosition(source, target);
 		Piece capturedPiece = makeMove(source, target);
+
 		if (testCheck(currentPlayer)) {
 			undoMove(source, target, capturedPiece);
 			throw new ChessException("You can't put yourself in check");
 		}
 
-		ChessPiece movedPiece = (ChessPiece) board.piece(target);
+		ChessPiece movedPiece = (ChessPiece)board.piece(target);
 
 		check = (testCheck(opponent(currentPlayer))) ? true : false;
 
@@ -95,6 +96,7 @@ public class ChessMatch {
 		}
 
 		//Special Move enpassant
+		/* Se o peão andou duas casas, será uma  */
 		if (movedPiece instanceof Pawn && (target.getRow() == source.getRow() - 2 || target.getRow() == source.getRow() + 2)){
 			enPassantVulnerable = movedPiece;
 		} else {
