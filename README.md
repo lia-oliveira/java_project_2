@@ -1,5 +1,7 @@
 <h1> Chess Game </h1>
 
+Status: Finalizado
+
 Sumário:
 
 - [Sobre este repositório](#sobre-este-repositório)
@@ -44,3 +46,4 @@ Caso precise de imagens para entender a clonagem, consulte a [documentação](ht
 Esse foi um projeto guiado e pensei que não fosse acrescentar muito por causa disso. Quase deixei de fazer. Segui em frente porque era parte do curso e não me arrependi. Abriu minha mente para a forma como o código pode ser incrementado e testado, amplicando funcionalidades já existentes. Como a lógica vai ficando complexa conforme as regras são aplicadas. Encontrar e resolver as exceções que apareceram ao longo do projeto foi um ótimo exercício porque com um código desse tamanho é quase impossível escrever tudo certo a ponto de não ocorrerem exceções. No final eu já tinha uma ideia de onde procurar e isso me deixou bem feliz. Percebi um ganho na minha percepção e em breve vou tentar escrever a minha versão deste jogo.
 
 Se você está fazendo esse projeto e pensou em desistir, não desista. Mesmo que você precise assistir a mesma aula mais de uma vez, mesmo que precise abrir um bloco de notas e anotar cada regra ou o objetivo de cada função, siga em frente. Vai valer à pena. 
+
