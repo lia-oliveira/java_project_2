@@ -98,18 +98,18 @@ public class ChessMatch {
 			capturedPieces.add(capturedPiece);
 		}
 
-		// Special Move clastiling kingside rook - roque pequeno
+		// Special Move clastiling: kingside rook - roque pequeno
 		if (p instanceof King && target.getColumn() == source.getColumn() + 2) {
 			Position sourceT = new Position(source.getRow(), source.getColumn() + 3);
 			Position targetT = new Position(source.getRow(), source.getColumn() + 1);
-			ChessPiece rook = (ChessPiece)board. removePiece(sourceT);
+			ChessPiece rook = (ChessPiece)board.removePiece(sourceT);
 			board.placePiece(rook, targetT);
 			rook.increaseMoveCount();
 		}
-		//roque grande
+		// Special Move clastiling: Queenside rook - roque grande
 		if (p instanceof King && target.getColumn() == source.getColumn() - 2) {
 			Position sourceT = new Position(source.getRow(), source.getColumn() - 4);
-			Position targetT = new Position(source.getRow(), source.getColumn() + 1);
+			Position targetT = new Position(source.getRow(), source.getColumn() - 1);
 			ChessPiece rook = (ChessPiece)board. removePiece(sourceT);
 			board.placePiece(rook, targetT);
 			rook.increaseMoveCount();
@@ -138,7 +138,7 @@ public class ChessMatch {
 		//roque grande
 		if (p instanceof King && target.getColumn() == source.getColumn() - 2) {
 			Position sourceT = new Position(source.getRow(), source.getColumn() - 4);
-			Position targetT = new Position(source.getRow(), source.getColumn() + 1);
+			Position targetT = new Position(source.getRow(), source.getColumn() - 1);
 			ChessPiece rook = (ChessPiece)board. removePiece(targetT);
 			board.placePiece(rook, sourceT);
 			rook.decreaseMoveCount();
